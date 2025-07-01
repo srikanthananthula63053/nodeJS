@@ -1,0 +1,20 @@
+In Node.js, streams are a powerful way to handle data that is read from or written to a file, network, or other source — especially when dealing with large files or continuous data flow.
+
+Instead of loading all the data at once (which can cause memory issues), streams let you process data in small chunks.
+
+Types of Streams
+Node.js has four main types of streams:
+
+Type	Purpose
+Readable	Read data (e.g., from a file)
+Writable	Write data (e.g., to a file)
+Duplex	Both read and write (e.g., sockets)
+Transform	Modify data while reading/writing
+
+Why Use Streams?
+✅ Memory-efficient — Process large files without loading them fully.
+
+✅ Faster start time — Start working on data before the whole file is read.
+
+✅ Real-time data processing — Useful for media streaming, file copying, etc.
+

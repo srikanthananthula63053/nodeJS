@@ -1,0 +1,3 @@
+mkdir stands for make directory. It's used in command-line interfaces 
+(like Linux terminal, macOS terminal, or Windows PowerShell) 
+to create new folders (directories).

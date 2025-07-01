@@ -1,0 +1,6 @@
+Your code is almost correct, but it has one issue:
+
+You are trying to compress a file using createGzip(), but you're writing the output to ex2.txt, which looks like a normal text file, not a compressed one.
+
+✅ Fix 1: Use .gz Extension for Compressed Output
+Since you're using Gzip, the output file should typically be named like ex.txt.gz to reflect it's compressed.

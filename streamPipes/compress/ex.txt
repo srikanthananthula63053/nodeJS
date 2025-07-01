@@ -1,0 +1,21 @@
+In traditional programming languages, like Java or Python, operations are often blocking — meaning they wait until a task (like file reading or database fetching) is complete before moving on.
+
+Node.js, on the other hand, uses an event-driven architecture. When Node.js needs to perform a task (like reading a file), it sends that task to the system kernel and moves on to the next instruction. The event loop continuously checks if tasks are complete and triggers callback functions when they are.
+
+🔄 How the Event Loop Works
+The event loop operates in phases, each handling a specific type of callback:
+
+Timers Phase – Executes setTimeout() and setInterval() callbacks.
+
+Pending Callbacks Phase – Executes I/O callbacks deferred to the next loop.
+
+Idle, Prepare Phase – Internal use only.
+
+Poll Phase – Retrieves new I/O events; executes I/O callbacks.
+
+Check Phase – Executes setImmediate() callbacks.
+
+Close Callbacks Phase – Handles things like socket.on('close').
+
+Between each phase, Node may check for tasks in the microtask queue (e.g., .then() callbacks from Promises).
+
