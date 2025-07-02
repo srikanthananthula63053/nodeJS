@@ -1,0 +1,24 @@
+{
+  "name": "Sreekanth Ananthula",
+  "age": 25,
+  "isStudent": true,
+  "skills": ["JavaScript", "Node.js", "HTML", "CSS"],
+  "address": {
+    "street": "123 Main Street",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "zip": "500001"
+  },
+  "education": [
+    {
+      "degree": "B.Tech",
+      "major": "Computer Science",
+      "year": 2022
+    },
+    {
+      "degree": "Intermediate",
+      "major": "MPC",
+      "year": 2018
+    }
+  ]
+}

@@ -14,6 +14,7 @@
 
 const http=require('http')
 const server=http.createServer((req,res)=>{
+    console.log(req.url)
     if(req.url==="/"){
         res.write("hello world i am here")
         res.end()
@@ -23,4 +24,4 @@ const server=http.createServer((req,res)=>{
     }
 })
 
-server.listen('3000')
+server.listen('3001')
